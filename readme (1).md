@@ -1,61 +1,120 @@
-# ReactJS In-Depth Tutorial Series
+# ReactJS Daily
 
-Welcome to the comprehensive repository dedicated to teaching ReactJS in depth. This series covers not just the basics but dives deep into the intricacies of ReactJS to ensure that you emerge with a solid foundation and deep understanding of the most popular frontend library in the world.
-
-## 🌟 Features
-
-- **In-Depth Explanations**: Each concept is broken down for easier understanding and comprehensive learning.
-- **Project-Based Learning**: Multiple projects to ensure that your theoretical knowledge is supplemented with practical experience.
-- **Free Video Series**: All lessons are available in video format on our YouTube channel "chai aur code".
-
-## 🚀 Getting Started
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/hiteshchoudhary/chai-aur-react.git
-   ```
-
-2. Navigate to each project folder and follow the instructions in the respective README to set up and run the project.
-
-3. Parallelly, watch the video lessons on the ["chai aur code" YouTube channel](https://www.youtube.com/channel/UCNQ6FEtztATuaVhZKCY28Yw) for a detailed walk-through.
-
-## 📚 Modules & Projects
-
-1. **React JS RoadMap**:
-   
-   - [Watch Lesson](https://www.youtube.com/watch?v=vz1RlUyrc3w&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige)
-
-2. **Create react projects**:
-   - [Watch Lesson](https://www.youtube.com/watch?v=k3KqQvywToE&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=2)
-
-3. **Understand the react flow and structure**:
-   - [Watch Lesson](https://www.youtube.com/watch?v=yNbnA5pryMg&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=3)
-4. **Create your own react library and JSX**:
-   - [Watch Lesson](https://www.youtube.com/watch?v=kAOuj6o7Kxs&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=4)
-
-... _(on going series)_
-
-## 📖 Additional Resources
-
-- [Official React Documentation](https://reactjs.org/docs/getting-started.html)
-- [React Community Support on Discord](https://hitesh.ai/discord)
-
-## 💼 Contribution
-
-Contributions are always welcomed. Feel free to raise issues or send in pull requests. Please do not update the existing code as users when they watch videos, they expect same code in repo.
-
-## 📺 "chai aur code" on YouTube
-
-Don't forget to subscribe to ["chai aur code"](https://www.youtube.com/channel/UCNQ6FEtztATuaVhZKCY28Yw) on YouTube for the entire video series and much more!
-
-## 🙏 Acknowledgements
-
-A big thank you to the React community, Open Source contributors, and all the students and professionals who've provided their feedback and support to make this series better!
+Everyday practice of React.
 
 ---
 
-**Happy Learning!** ✨
+# Day 1
+
+### React Platforms
+
+* Website – React DOM
+* Mobile Apps – React Native
+
+### npm vs npx
+
+* npm – Node Package Manager
+
+* npx – Node Package Executor
+
+* npm = "Buy and keep the tool in your toolbox."
+
+* npx = "Borrow the tool, use it once, and return it."
+
+### Creating a React Project
+
+#### Using Create React App (CRA)
+
+```bash
+npx create-react-app 01basicnpx
+```
+
+* Creates a larger project bundle.
+* Takes more time to set up.
+
+#### Using Vite
+
+```bash
+npm create vite@latest 01basicvite
+npm install
+npm run dev
+```
+
+* Creates a lighter and faster project.
+* Faster startup and build times.
+* Modern and recommended for new React projects.
+
+### Running the Project
+
+#### CRA
+
+```bash
+npm start
+```
+
+#### Vite
+
+```bash
+npm run dev
+```
+
+* Starts a local development server for coding and testing.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+* Creates an optimized production-ready version of the application.
+* CRA generates a `build` folder.
+* Vite generates a `dist` folder.
+* These folders are used for deployment.
 
 ---
 
-_Made with ☕️ by HiteshChoudhary_
+## package.json
+
+### CRA
+
+* `jest-dom` is a testing library that provides custom matchers for testing DOM elements in React applications.
+
+### Vite
+
+* `devDependencies` are packages used only during development and are not included in the production build.
+
+---
+
+## Cleaning the Project
+
+Inside both `01basicnpx` and `01basicvite`, delete unnecessary files such as:
+
+* setupTests.js
+* reportWebVitals.js
+* logo.svg
+* App.test.js
+* App.css
+
+---
+
+## Important Files
+
+### manifest.json
+
+Used to provide metadata about a web application, especially for Progressive Web Apps (PWAs).
+
+Examples:
+
+* App name
+* Icons
+* Theme color
+* Display mode
+* Start URL
+
+### index.html
+
+* The main HTML page loaded by the browser.
+* React mounts the application into the root element of this page.
+* In a Single Page Application (SPA), the same HTML page is used while React updates the content dynamically.
+
+---
